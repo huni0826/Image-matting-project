@@ -141,7 +141,7 @@ _TARBALL_NAME = _MODEL_URLS[MODEL_NAME]
 
 model_dir = 'deeplab_model'
 if not os.path.exists(model_dir):
-  tf.gfile.MakeDirs(model_dir)
+  tf.io.gfile.MakeDirs(model_dir)
 
 download_path = os.path.join(model_dir, _TARBALL_NAME)
 if not os.path.exists(download_path):
